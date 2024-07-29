@@ -12,7 +12,11 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 function connectDB() {
     try {
-        mongoose.connect('mongodb://localhost:27017/Piyush_Real_Estate');
+        const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/Piyush_Real_Estate';
+        mongoose.connect(mongoURI, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        })
         console.log("MongoDB Connected!");
     }
     catch (err) {
