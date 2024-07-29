@@ -12,7 +12,7 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 function connectDB() {
     try {
-        const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/Piyush_Real_Estate';
+        const mongoURI = process.env.MONGO_URI || 'mongodb+srv://pn:pnpnpnpn@cluster0.wriuh1a.mongodb.net/mern-project';
         mongoose.connect(mongoURI, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
