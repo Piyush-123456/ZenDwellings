@@ -46,7 +46,7 @@ export default defineConfig({
   build: {
     sourcemap: true,
     rollupOptions: {
-      external: ['react', 'react-dom','react-icons'],
+      external: ['react', 'react-dom','react-icons/fa'],
     },
   }
 });
