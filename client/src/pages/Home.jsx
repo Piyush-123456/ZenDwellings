@@ -49,7 +49,7 @@ export default function Home() {
   return (
     <div>
       {/* top */}
-      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto' style={{fontFamily:"gilroy"}}>
+      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto' style={{ fontFamily: "gilroy" }}>
         <h1 className='text-black-700 font-bold text-3xl lg:text-6xl'>
           Find your next <span className='text-red-500'>perfect</span>
           <br />
@@ -62,7 +62,7 @@ export default function Home() {
           We have a wide range of properties for you to choose from.
         </div>
         <Link
-        style={{fontFamily:"gilroy"}}
+          style={{ fontFamily: "gilroy" }}
           to={'/search'}
           className='text-xm sm:text-sm text-blue-800 font-bold hover:underline'
         >
@@ -75,7 +75,7 @@ export default function Home() {
         {offerListings &&
           offerListings.length > 0 &&
           offerListings.map((listing) => (
-            <SwiperSlide>
+            <SwiperSlide >
               <div
                 style={{
                   background: `url(${listing.imageUrls[0]}) center no-repeat`,

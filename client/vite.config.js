@@ -15,10 +15,14 @@ export default defineConfig({
 
   plugins: [react(), sentryVitePlugin({
     org: "piyush-panchabhai",
-    project: "javascript-react"
+    project: "javascript-react",
+
   })],
 
   build: {
-    sourcemap: true
+    sourcemap: true,
+    rollupOptions: {
+      external: ['react', 'react-dom']
+    }
   }
 })
